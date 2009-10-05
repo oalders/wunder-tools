@@ -7,6 +7,11 @@
 # export PATH=~/devperl/bin:$PATH
 # to the last line of the file
 
+# to use this version, you'll need to refer to perl by its version
+# number
+# eg: 
+# perl5.11.0 --version
+
 perl='perl-5.11.0'
 
 # download
