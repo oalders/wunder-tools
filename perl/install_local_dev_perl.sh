@@ -21,6 +21,7 @@ make test
 make install
 
 # clean up after yourself
+cd ..
 rm -rf $perl
 rm $perl.tar.bz2
 
