@@ -3,7 +3,12 @@
 # installs a local copy of the (hopefully) latest development
 # version of perl 5
 
-# after running this script, open ~/.profile on your Mac and add:
+# after running this script, you'll need to add the new perl 
+# directory to your PATH.  
+#
+# For example, if you've installed this on your MAC, 
+# open ~/.profile on your Mac and add:
+#
 # export PATH=~/devperl/bin:$PATH
 # to the last line of the file
 
