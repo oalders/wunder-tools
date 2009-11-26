@@ -15,12 +15,12 @@
 # to use this version, you'll need to refer to perl by its version
 # number
 # eg: 
-# perl5.11.0 --version
+# perl5.11.2 --version
 
-perl='perl-5.11.0'
+perl='perl-5.11.2'
 
 # download
-wget http://search.cpan.org/CPAN/authors/id/J/JE/JESSE/$perl.tar.bz2
+wget http://search.cpan.org/CPAN/authors/id/L/LB/LBROCARD/perl-5.11.2.tar.bz2 
 tar xjf $perl.tar.bz2
 cd $perl
 
