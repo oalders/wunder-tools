@@ -19,7 +19,7 @@ use Perl6::Junction qw( any );
 
 `dpkg -l > installed.packages`;
 
-my @pkgs = undef;
+my @pkgs = ();
 my @ignore = (
 );
 
@@ -52,5 +52,5 @@ close (INSTALL);
 
 print scalar @pkgs . " pkgs found\n";
 
-rm installed.packages;
+unlink 'installed.packages';
 
