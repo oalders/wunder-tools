@@ -2,11 +2,11 @@
 
 use Modern::Perl;
 
-=head1 SYNOSPSIS
+=head1 SYNOPSIS
 
 Pretty-prints an URL GET request so you can more easily make sense of it.
 
-perl dump_params.pl "f=q&source=s_q&hl=en&geocode=&q=toronto,+on&sll=43.670478,-79.404086&sspn=0.01088,0.018218&ie=UTF8&hq=&hnear=Toronto,+Toronto+Division,+Ontario&z=10" 
+perl dump_params.pl "f=q&source=s_q&hl=en&geocode=&q=toronto,+on&sll=43.670478,-79.404086&sspn=0.01088,0.018218&ie=UTF8&hq=&hnear=Toronto,+Toronto+Division,+Ontario&z=10"
 
 =cut
 
