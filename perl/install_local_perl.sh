@@ -8,10 +8,13 @@
 # export PATH=~/local/bin:$PATH
 # to the last line of the file
 
+perl='perl-5.12.0'
+perl_archive=$perl".tar.gz"
+
 # download
-wget http://www.cpan.org/modules/by-authors/id/D/DA/DAPM/perl-5.10.1.tar.bz2
-tar xjf perl-5.10.1.tar.bz2
-cd perl-5.10.1
+wget http://search.cpan.org/CPAN/authors/id/J/JE/JESSE/$perl_archive
+tar xjf $perl_archive 
+cd $perl 
 
 # configure and install
 perl Configure -de -Dprefix=${HOME}/local -Dusethreads
@@ -21,5 +24,5 @@ make install
 
 # clean up after yourself
 cd ..
-rm -rf perl-5.10.1
-rm perl-5.10.1.tar.bz2
+rm -rf $perl 
+rm $perl_archive 
