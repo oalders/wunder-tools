@@ -5,14 +5,15 @@
 # Installs are broken out into several commands for layout/clarity.
 
 cpan App::cpanminus
+cpanm --self-upgrade
 
 # Modules required by CPAN installer
-cpanm YAML::Syck CPAN Archive::Zip Archive::Tar CPAN::SQLite CPAN::Reporter
+cpanm --skip-installed YAML::Syck CPAN Archive::Zip Archive::Tar CPAN::SQLite CPAN::Reporter
 
-cpanm Perl::Critic Test::Perl::Critic
-cpanm Number::Bytes::Human
-cpanm Template::Plugin::DateTime::Format
-cpanm DBI
-cpanm Bundle::CPAN
-cpanm Modern::Perl CGI Data::Dump WWW::Mechanize::Cached
-cpanm Catalyst::Devel Catalyst::Runtime Net::Twitter
+cpanm --skip-installed Perl::Critic Test::Perl::Critic
+cpanm --skip-installed Number::Bytes::Human
+cpanm --skip-installed Template::Plugin::DateTime::Format
+cpanm --skip-installed DBI
+cpanm --skip-installed Bundle::CPAN
+cpanm --skip-installed Modern::Perl CGI Data::Dump WWW::Mechanize::Cached
+cpanm --skip-installed Catalyst::Devel Catalyst::Runtime Net::Twitter
