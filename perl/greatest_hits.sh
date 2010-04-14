@@ -12,8 +12,8 @@ cpanm --skip-installed YAML::Syck CPAN Archive::Zip Archive::Tar CPAN::SQLite CP
 
 cpanm --skip-installed Perl::Critic Test::Perl::Critic
 cpanm --skip-installed Number::Bytes::Human
-cpanm --skip-installed Template::Plugin::DateTime::Format
 cpanm --skip-installed DBI
 cpanm --skip-installed Bundle::CPAN
 cpanm --skip-installed Modern::Perl CGI Data::Dump WWW::Mechanize::Cached
-cpanm --skip-installed Catalyst::Devel Catalyst::Runtime Net::Twitter
+cpanm --skip-installed Catalyst::Devel Catalyst::Runtime Catalyst::Model::DBIC::Schema Catalyst::View::TT 
+cpanm --skip-installed Net::Twitter
