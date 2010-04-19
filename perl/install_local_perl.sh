@@ -18,9 +18,4 @@ cd $perl
 
 # configure and install
 perl Configure -de -Dprefix=${HOME}/local -Dusethreads
-make && make test && make install
-
-# clean up after yourself
-cd ..
-rm -rf $perl 
-rm $perl_archive 
+make && make test && make install && cd .. && rm -rf $perl && rm $perl_archive
