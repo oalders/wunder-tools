@@ -15,15 +15,15 @@
 # to use this version, you'll need to refer to Perl by its version
 # number
 # eg: 
-# perl5.11.3 --version
+# perl5.11.4 --version
 
-perl='perl-5.11.3'
+perl='perl-5.11.4'
 perl_archive=$perl".tar.bz2"
 
 echo "downloading $perl_archive\n";
 
 # download
-wget http://search.cpan.org/CPAN/authors/id/J/JE/JESSE/$perl_archive
+wget http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/$perl_archive
 tar xjf $perl_archive
 cd $perl
 
