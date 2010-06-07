@@ -6,15 +6,17 @@ Convert arbitrary number of bytes into something that makes sense to a human
 
 =cut
 
-use strict;
-use warnings;
-
+use Modern::Perl;
 use Number::Bytes::Human qw(format_bytes);
 
-print "Number in bytes?\n";
+my $bytes = shift @ARGV;
 
-my $bytes = <STDIN>;
-chomp $bytes;
+if ( !$bytes ) {
+    say "Number in bytes?";
 
-print format_bytes( $bytes ), "\n";
+    my $bytes = <STDIN>;
+    chomp $bytes;
+}
+
+say format_bytes( $bytes );
 
