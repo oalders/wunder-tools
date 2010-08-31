@@ -13,7 +13,7 @@ perl_archive=$perl".tar.gz"
 
 # download
 wget http://search.cpan.org/CPAN/authors/id/J/JE/JESSE/$perl_archive
-tar xjf $perl_archive 
+tar xzf $perl_archive 
 cd $perl 
 
 # configure and install
