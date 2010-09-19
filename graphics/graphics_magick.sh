@@ -6,7 +6,7 @@ tar xzf GraphicsMagick-1.3.12.tar.gz
 cd GraphicsMagick-1.3.12/
 ./configure --prefix=/usr --enable-shared
 make
-make install
+sudo make install
 cd PerlMagick/
 perl Makefile.PL
 make
