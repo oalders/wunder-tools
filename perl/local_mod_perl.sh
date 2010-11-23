@@ -12,4 +12,4 @@ tar zxvf mod_perl-2.0.4.tar.gz
 cd mod_perl-2.0.4/
 
 perl Makefile.PL MP_APXS=/usr/bin/apxs2
-make && make test && make install
+sudo make && sudo make test && sudo make install
