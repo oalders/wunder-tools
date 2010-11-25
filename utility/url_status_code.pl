@@ -7,6 +7,7 @@ Returns an HTTP status code for a given URL.  Useful for troubleshooting if redi
 =cut
 
 use Modern::Perl;
+use URI::Heuristic qw(uf_uristr);
 use WWW::Mechanize;
 
 my $mech = WWW::Mechanize->new( autocheck => 0 );
@@ -19,6 +20,7 @@ if ( !$url ) {
 } 
  
 $mech->requests_redirectable( [] );
-$mech->get( $url );
+$mech->head( uf_uristr( $url ) );
  
 say "status: " . $mech->status;
+#$mech->dump_headers;
