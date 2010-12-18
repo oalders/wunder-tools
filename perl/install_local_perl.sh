@@ -12,6 +12,7 @@ perl='perl-5.12.2'
 perl_archive=$perl".tar.gz"
 
 # download
+cd /tmp
 wget http://search.cpan.org/CPAN/authors/id/J/JE/JESSE/$perl_archive
 tar xzf $perl_archive 
 cd $perl 
