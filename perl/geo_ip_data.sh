@@ -12,5 +12,3 @@ sudo gunzip GeoLiteCity.dat.gz
 sudo wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
 sudo rm GeoIP.dat
 sudo gunzip GeoIP.dat.gz
-sudo rm GeoIP.dat.gz
-
