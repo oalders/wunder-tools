@@ -4,8 +4,10 @@
 
 sudo apt-get install zlib1g-dev
 
-cd /tmp
-rm -rf /tmp/GeoIP*
+mkdir -p /tmp/$USER
+rm -rf /tmp/$USER/GeoIP*
+cd /tmp/$USER
+
 wget http://geolite.maxmind.com/download/geoip/api/c/GeoIP.tar.gz
 tar xzvf GeoIP.tar.gz
 mv GeoIP-* GeoIP
