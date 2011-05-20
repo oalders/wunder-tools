@@ -8,7 +8,7 @@
 # export PATH=~/local/bin:$PATH
 # to the last line of the file
 
-perl='perl-5.12.2'
+perl='perl-5.14.0'
 perl_archive=$perl".tar.gz"
 
 # download
@@ -18,5 +18,5 @@ tar xzf $perl_archive
 cd $perl 
 
 # configure and install
-perl Configure -de -Dprefix=${HOME}/local -Dusethreads
+perl Configure -de -Dinc_version_list=none -Dprefix=${HOME}/local -Dusethreads
 make && make test && make install && cd .. && rm -rf $perl && rm $perl_archive
