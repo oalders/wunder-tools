@@ -8,7 +8,7 @@
 # export PATH=~/local/bin:$PATH
 # to the last line of the file
 
-perl='perl-5.14.0'
+perl='perl-5.14.1'
 perl_archive=$perl".tar.gz"
 
 # download
