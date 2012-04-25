@@ -17,3 +17,4 @@ cpanm --skip-installed Bundle::CPAN
 cpanm --skip-installed Modern::Perl CGI Data::Dump WWW::Mechanize::Cached
 cpanm --skip-installed Catalyst::Devel Catalyst::Runtime Catalyst::Model::DBIC::Schema Catalyst::View::TT 
 cpanm --skip-installed Net::Twitter
+cpanm --skip-installed Find::Lib

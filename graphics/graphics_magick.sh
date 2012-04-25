@@ -12,7 +12,7 @@ cd GraphicsMagick-1.3.12/
 make
 sudo make install
 cd PerlMagick/
-perl Makefile.PL
+perl Makefile.PL PREFIX=~/perl5
 make
 make test
 make install
